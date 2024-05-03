@@ -1,0 +1,6 @@
+RewriteEngine On
+RewriteBase /PWEB_DATABASE
+RewriteRule ^index\\.php$ - [L]
+RewrteCond %{REQUEST_FILENAME} !-f
+RewrteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /PWEB_DATABASE/index.php [L]
